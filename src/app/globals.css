@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-asfalto-950: #0b0a09;
+  --color-asfalto-900: #121110;
+  --color-asfalto-800: #1b1917;
+  --color-asfalto-700: #26221f;
+  --color-asfalto-600: #38322d;
+  --color-asfalto-400: #8a8079;
+
+  --color-couro-700: #4a2c1a;
+  --color-couro-500: #7a4a2b;
+
+  --color-ambar-300: #f7cf7d;
+  --color-ambar-400: #f2b04a;
+  --color-ambar-500: #e3951f;
+  --color-ambar-600: #b97412;
+
+  --color-sangue-500: #c23b2b;
+  --color-sangue-600: #9b2c20;
+
+  --color-creme: #f2e9da;
+}
+
+@theme inline {
+  --font-display: var(--font-bebas), "Impact", sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-asfalto-950);
+  color: var(--color-creme);
+}
+
+/* Textura sutil de couro/grão por cima dos fundos escuros. */
+@utility textura {
+  background-image:
+    radial-gradient(circle at 20% 10%, rgb(242 176 74 / 0.07), transparent 40%),
+    radial-gradient(circle at 80% 90%, rgb(194 59 43 / 0.06), transparent 45%),
+    repeating-linear-gradient(45deg, rgb(255 255 255 / 0.012) 0 2px, transparent 2px 6px);
+}
+
+/* Faixa central de estrada usada como divisor. */
+@utility faixa-estrada {
+  background-image: repeating-linear-gradient(90deg, var(--color-ambar-400) 0 28px, transparent 28px 48px);
+}
+
+@utility sem-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
