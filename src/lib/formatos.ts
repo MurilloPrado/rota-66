@@ -23,6 +23,6 @@ export function mascaraTelefone(valor: string): string {
 }
 
 export function linkWhatsApp(numero: string, mensagem?: string): string {
-  const base = `https://wa.me/${somenteDigitos(numero)}`;
-  return mensagem ? `${base}?text=${encodeURIComponent(mensagem)}` : base;
+  const base = `https://api.whatsapp.com/send?phone=${somenteDigitos(numero)}`;
+  return mensagem ? `${base}&text=${encodeURIComponent(mensagem)}` : base;
 }

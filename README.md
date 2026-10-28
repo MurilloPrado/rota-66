@@ -42,7 +42,7 @@ dados de exemplo, agendamento simulado e nada é salvo.
 | Endereço, WhatsApp, Instagram | `src/lib/config.ts` |
 | Horário de funcionamento, intervalo entre horários | `src/lib/config.ts` |
 | Serviços, preços, barbeiros | tabelas `servicos` e `barbeiros` no Supabase |
-| Fotos da galeria | `public/galeria/01.jpg` … `08.jpg` |
+| Fotos da galeria | lista `FOTOS` em `src/components/landing/Galeria.tsx` |
 | Cores do tema | `src/app/globals.css` (`@theme`) |
 
 ## Estrutura

@@ -72,7 +72,7 @@ export function Sobre() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-md bg-white/5 px-3 py-2 text-sm font-semibold hover:bg-white/10"
                 >
-                  <IconeInstagram /> Instagram
+                  <IconeInstagram /> {BARBEARIA.instagramUsuario}
                 </a>
               </div>
             </Cartao>

@@ -1,11 +1,10 @@
--- Dados iniciais de exemplo. Ajuste nomes, preços e durações à vontade.
+-- Dados iniciais. Ajuste nomes, preços e durações à vontade.
 
 insert into public.servicos (nome, descricao, preco_centavos, duracao_min, ordem) values
-  ('Corte de Cabelo',      'Tesoura e/ou máquina, lavagem e finalização.',        5000, 40, 1),
-  ('Barba',                'Navalha, toalha quente e balm hidratante.',           4000, 30, 2),
-  ('Combo Cabelo + Barba', 'O pacote completo da estrada.',                       8000, 70, 3),
-  ('Toalha Quente',        'Ritual de toalha quente com óleos essenciais.',       2000, 15, 4),
-  ('Pezinho / Acabamento', 'Contorno e acabamento entre um corte e outro.',       2000, 15, 5);
+  ('Corte Masculino',                'Tesoura e/ou máquina, lavagem e finalização.', 4500, 40, 1),
+  ('Barba Tradicional',              'Navalha, toalha quente e balm hidratante.',    3000, 30, 2),
+  ('Combo Rota 66 (Cabelo + Barba)', 'O pacote completo da estrada.',                6600, 70, 3),
+  ('Sobrancelha',                    'Limpeza e alinhamento na navalha.',            1500, 15, 4);
 
 insert into public.barbeiros (nome, bio) values
   ('Elvis',  'Pompadour, degradê e clássicos dos anos 50.'),

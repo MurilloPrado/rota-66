@@ -6,18 +6,18 @@ export const BARBEARIA = {
   sobrenome: "Navalha & Rock",
   slogan: "Corte clássico, atitude rock'n'roll.",
   endereco: {
-    rua: "Av. Exemplo, 66",
-    bairro: "Centro",
+    rua: "Rua Augusta, 1966",
+    bairro: "Consolação",
     cidade: "São Paulo",
     uf: "SP",
-    cep: "00000-000",
   },
   // Número com DDI + DDD, só dígitos (usado no link do WhatsApp).
-  whatsapp: "5511999999999",
+  whatsapp: "5511999990000",
   instagram: "https://instagram.com/rota66navalharock",
+  instagramUsuario: "@rota66navalharock",
 };
 
-export const ENDERECO_COMPLETO = `${BARBEARIA.endereco.rua} - ${BARBEARIA.endereco.bairro}, ${BARBEARIA.endereco.cidade} - ${BARBEARIA.endereco.uf}, ${BARBEARIA.endereco.cep}`;
+export const ENDERECO_COMPLETO = `${BARBEARIA.endereco.rua} - ${BARBEARIA.endereco.bairro}, ${BARBEARIA.endereco.cidade} - ${BARBEARIA.endereco.uf}`;
 export const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ENDERECO_COMPLETO)}`;
 export const MAPS_EMBED_URL = `https://www.google.com/maps?q=${encodeURIComponent(ENDERECO_COMPLETO)}&output=embed`;
 
@@ -38,11 +38,10 @@ export const DIAS_AGENDAMENTO = 14; // quantos dias à frente o cliente pode age
 
 // Usados quando o Supabase ainda não está configurado (modo demonstração).
 export const SERVICOS_DEMO: Servico[] = [
-  { id: "demo-corte", nome: "Corte de Cabelo", descricao: "Tesoura e/ou máquina, lavagem e finalização.", preco_centavos: 5000, duracao_min: 40 },
-  { id: "demo-barba", nome: "Barba", descricao: "Navalha, toalha quente e balm hidratante.", preco_centavos: 4000, duracao_min: 30 },
-  { id: "demo-combo", nome: "Combo Cabelo + Barba", descricao: "O pacote completo da estrada.", preco_centavos: 8000, duracao_min: 70 },
-  { id: "demo-toalha", nome: "Toalha Quente", descricao: "Ritual de toalha quente com óleos essenciais.", preco_centavos: 2000, duracao_min: 15 },
-  { id: "demo-pezinho", nome: "Pezinho / Acabamento", descricao: "Contorno e acabamento entre um corte e outro.", preco_centavos: 2000, duracao_min: 15 },
+  { id: "demo-corte", nome: "Corte Masculino", descricao: "Tesoura e/ou máquina, lavagem e finalização.", preco_centavos: 4500, duracao_min: 40 },
+  { id: "demo-barba", nome: "Barba Tradicional", descricao: "Navalha, toalha quente e balm hidratante.", preco_centavos: 3000, duracao_min: 30 },
+  { id: "demo-combo", nome: "Combo Rota 66 (Cabelo + Barba)", descricao: "O pacote completo da estrada.", preco_centavos: 6600, duracao_min: 70 },
+  { id: "demo-sobrancelha", nome: "Sobrancelha", descricao: "Limpeza e alinhamento na navalha.", preco_centavos: 1500, duracao_min: 15 },
 ];
 
 export const BARBEIROS_DEMO: Barbeiro[] = [
